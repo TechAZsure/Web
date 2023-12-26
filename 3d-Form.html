@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Messages | Firebase</title>
+        <link rel="stylesheet" href="./3d-form/3d-form.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body onload="slider()">
+        <section class="sub-header2">
+            <nav>
+                <a href="index.html"><img src="Free.jpg"></a>
+                <p>TechAZsure</p>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">ACHIEVEMENTS</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>3D - Printing</h1>
+        </section>
+
+        <section class="form-3d">
+            <div class="form-banner">
+                <div class="slider">
+                    <img src="./3d-form/3d-7.jpg" id="slideImg">
+                </div>
+                <div class="overlay-3d">
+                    <div class="content-3d">
+                        <h1>3d Printing Application Form</h1>
+                    </div>
+                    <div class="form-container">
+                        <form action="" id="contactForm">
+                            <div class="alert">Your message sent</div>
+                
+                            <div class="inputBox">
+                                <input type="text" id="name" placeholder="Your Name...." />
+                            </div>
+                
+                            <div class="inputBox">
+                                <input type="email" id="emailid" placeholder="Your Email....." />
+                            </div>
+                            <div class="inputBox">
+                                <input type="contact" id="contact" placeholder="Your Contact.No....." />
+                            </div>
+                            <div class="inputBox">
+                                <input type="project" id="project" placeholder="Project Title....." />
+                            </div>
+                            <div class="inputBox">
+                                <input type="deadline" id="deadline" placeholder="Deadline....." />
+                            </div>
+                            <div class="inputBox">
+                                <input type="File-link" id="file_link" placeholder="If Paste orelse None..." />
+                            </div>
+                            <div class="inputBox">
+                                <textarea id="msgContent" cols="30" rows="10" placeholder="Description"></textarea>
+                            </div>
+                
+                            <div class="inputBox">
+                                <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                    
+            </div>
+          </section>
+        
+
+
+
+
+
+        <section id="footer">
+            <div class="title-text">
+            <h1>About Us</h1>
+            <hr>
+            </div>
+            <div class="mention">
+                <div class="footer-left">
+                    <p>Techguy with passion to be stand alone by own feet by utilizing my skills and raise others too in the same spirit.</p>
+                    <h2>Shaik Althaf</h2>
+                </div>
+                <img src="mine.jpg">
+            </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61552895274482"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/techazsure"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/TechAZsure"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@Real-TimeProjects"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://discord.gg/dptKzfaf"><i class="fa fa-google"></i></a>
+            <a href="https://github.com/TechAZsure"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shaik-althaf-baa96a229"><i class="fa fa-linkedin"></i></a>
+            <a href="https://whatsapp.com/channel/0029VaBPIWTDTkK3r4yXAk0U"><i class="fa fa-whatsapp"></i></a>
+            <p>Copyright @TechazSure</p>
+        </div>
+        </section>
+
+        <script>
+            var navLink = document.getElementById("navLinks");
+            function showMenu(){
+                navLink.style.left = "250px";
+            }
+            function hideMenu(){
+                navLink.style.left = "-150px";
+            }
+        </script>
+        <script>
+            var slideImg = document.getElementById("slideImg");
+            var images = new Array(
+                "./3d-form/3d-1.jpg",
+                "./3d-form/3d-2.jfif",
+                "./3d-form/3d-3.jpg",
+                "./3d-form/3d-4.jpg",
+                "./3d-form/3d-5.jpg",
+                "./3d-form/3d-6.jpg",
+                "./3d-form/3d-8.jpg",
+                "./3d-form/3d-9.jfif",
+                "./3d-form/3d-10.jpg",
+                "./3d-form/3d-11.jpg",
+                "./3d-form/3d-12.jpg",
+            );
+            var len = images.length;
+            var i = 0;
+
+            function slider(){
+                if (i > len-1){
+                    i = 0;
+                }
+                slideImg.src = images[i];
+                i++;
+                setTimeout('slider()',3000);
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-database.js"></script>
+        <script src="./3d-form/3d-Form.js"></script>
+    
+    </body>
+</html>
+
