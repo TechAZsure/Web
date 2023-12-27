@@ -712,7 +712,7 @@ hr{
         padding: 20px;
     }
     .arduino-container{
-        height: 180vh;
+        height: 100vh;
     }
     .image-container, .left-container{
         flex-basis: 100%;
