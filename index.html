@@ -3,47 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Web App</title>
+  <title>TechAZsure | Home</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header -->
   <header>
-    <h1>My Web App</h1>
+    <h1>TechAZsure</h1>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
   </header>
 
-  <!-- Sticky Navbar -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <ul>
+    <div class="nav-container">
+      <div class="logo">TechAZsure</div>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#mission">Mission</a></li>
-        <li><a href="#projects" class="hover-scroll">Projects</a></li>
-        <li><a href="#ecommerce" class="hover-scroll">E-Commerce</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#projects">Projects</a>
+          <ul class="dropdown-content">
+            <li><a href="#solar">Heterojunction Solar</a></li>
+            <li><a href="#tile">Kinetic Tile</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#ecommerce">E-Commerce</a>
+          <ul class="dropdown-content">
+            <li><a href="#electronics">Electronics</a></li>
+            <li><a href="#sensors">Sensors</a></li>
+            <li><a href="#microcontrollers">Microcontrollers</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#feedback">Feedback</a></li>
-    </ul>
+        <li class="close-btn" id="close-btn">×</li>
+      </ul>
+    </div>
     <div class="neon-glow"></div>
   </nav>
 
   <!-- Sections -->
-  <section id="about"><h2>About</h2></section>
-  <section id="mission"><h2>Mission</h2></section>
-  <section id="projects"><h2>Projects</h2></section>
-  <section id="solar"><h3>Heterojunction Solar</h3></section>
-  <section id="tile"><h3>Kinetic Tile</h3></section>
-  <section id="ecommerce"><h2>E-Commerce</h2></section>
-  <section id="electronics"><h3>Electronics</h3></section>
-  <section id="sensors"><h3>Sensors</h3></section>
-  <section id="microcontrollers"><h3>Microcontrollers</h3></section>
-  <section id="contact"><h2>Contact Us</h2></section>
-  <section id="feedback"><h2>Feedback</h2></section>
+  <section id="about" data-aos="fade-up"><h2>About Us</h2></section>
+  <section id="mission" data-aos="fade-up"><h2>Our Mission</h2></section>
+  <section id="projects" data-aos="fade-up"><h2>Projects</h2></section>
+  <section id="solar" data-aos="fade-up"><h3>Heterojunction Solar</h3></section>
+  <section id="tile" data-aos="fade-up"><h3>Kinetic Tile</h3></section>
+  <section id="ecommerce" data-aos="fade-up"><h2>E-Commerce</h2></section>
+  <section id="electronics" data-aos="fade-up"><h3>Electronics</h3></section>
+  <section id="sensors" data-aos="fade-up"><h3>Sensors</h3></section>
+  <section id="microcontrollers" data-aos="fade-up"><h3>Microcontrollers</h3></section>
+  <section id="contact" data-aos="fade-up"><h2>Contact Us</h2></section>
+  <section id="feedback" data-aos="fade-up"><h2>Feedback</h2></section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My Web App</p>
+    <p>&copy; 2025 TechAZsure. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
