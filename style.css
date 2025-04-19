@@ -175,6 +175,9 @@ body {
   .what-we-do-section {
   width: 100;
 }
+  .service-box{
+    width: 80%;
+  }
 
   .nav-links li {
     text-align: center;
