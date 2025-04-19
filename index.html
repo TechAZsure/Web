@@ -2,71 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TechAZsure | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechAZsure</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Sticky Navbar -->
   <header>
-    <h1>TechAZsure</h1>
-    <button id="dark-mode-toggle">Toggle Dark Mode</button>
-  </header>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
+    <nav class="navbar">
       <div class="logo">TechAZsure</div>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul class="nav-links" id="nav-links">
+
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#mission">Mission</a></li>
         <li class="dropdown">
-          <a href="#projects">Projects</a>
+          <a href="#">Projects</a>
           <ul class="dropdown-content">
             <li><a href="#solar">Heterojunction Solar</a></li>
-            <li><a href="#tile">Kinetic Tile</a></li>
+            <li><a href="#kinetic">Kinetic Tile</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#ecommerce">E-Commerce</a>
+          <a href="#">E-Commerce</a>
           <ul class="dropdown-content">
             <li><a href="#electronics">Electronics</a></li>
             <li><a href="#sensors">Sensors</a></li>
             <li><a href="#microcontrollers">Microcontrollers</a></li>
           </ul>
         </li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         <li><a href="#feedback">Feedback</a></li>
-        <li class="close-btn" id="close-btn">×</li>
       </ul>
+    </nav>
+  </header>
+
+  <!-- Carousel Section -->
+  <section class="carousel-container">
+    <div class="carousel" id="carousel">
+      <div class="slide active">
+        <img src="images/solar.jpg" alt="Solar">
+        <div class="caption">TechAZsure: Revolutionizing Heterojunction Solar Energy</div>
+      </div>
+      <div class="slide">
+        <img src="images/kinetic.jpg" alt="Kinetic">
+        <div class="caption">Harnessing Footsteps: Kinetic Tile Technology by TechAZsure</div>
+      </div>
+      <div class="slide">
+        <img src="images/iot.jpg" alt="IoT">
+        <div class="caption">Smart IoT Solutions for Real-Time Monitoring and Control</div>
+      </div>
     </div>
-    <div class="neon-glow"></div>
-  </nav>
-
-  <!-- Sections -->
-  <section id="about" data-aos="fade-up"><h2>About Us</h2></section>
-  <section id="mission" data-aos="fade-up"><h2>Our Mission</h2></section>
-  <section id="projects" data-aos="fade-up"><h2>Projects</h2></section>
-  <section id="solar" data-aos="fade-up"><h3>Heterojunction Solar</h3></section>
-  <section id="tile" data-aos="fade-up"><h3>Kinetic Tile</h3></section>
-  <section id="ecommerce" data-aos="fade-up"><h2>E-Commerce</h2></section>
-  <section id="electronics" data-aos="fade-up"><h3>Electronics</h3></section>
-  <section id="sensors" data-aos="fade-up"><h3>Sensors</h3></section>
-  <section id="microcontrollers" data-aos="fade-up"><h3>Microcontrollers</h3></section>
-  <section id="contact" data-aos="fade-up"><h2>Contact Us</h2></section>
-  <section id="feedback" data-aos="fade-up"><h2>Feedback</h2></section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 TechAZsure. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+    <div class="carousel-indicators" id="indicators"></div>
+  </section>
+  
+  <section id="about" class="about-section">
+      <h2 class="animate-text">About TechAZsure</h2>
+      <p class="animate-text">
+        At <strong>TechAZsure</strong>, we are committed to building cutting-edge solutions that address real-world challenges through innovation, sustainability, and inclusivity. Our startup is driven by a mission to develop cost-effective products and smart applications that are not only technologically advanced but also affordable and accessible to all segments of society—including economically underprivileged communities.
+      </p>
+      <p class="animate-text">
+        We pride ourselves on delivering quality, reliability, and satisfaction through every product and solution we offer. Our team focuses on creating impactful innovations across domains like <strong>green energy</strong>, <strong>bio-based alternatives</strong>, and <strong>smart tech products</strong>, ensuring a positive footprint on the environment while uplifting communities through technology.
+      </p>
+      <p class="animate-text">
+        Trust and transparency form the foundation of our vision. With every step forward, we aim to create meaningful, lasting value for our users—because at TechAZsure, we don’t just build products, we build trust.
+      </p>
+    </section>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About TechAZsure</h2>
+    <p>TechAZsure is a tech-driven innovation startup focused on renewable energy, smart electronics, and real-world IoT solutions. We believe in hands-on transformation using cutting-edge technologies for a smarter and sustainable future.</p>
+  </section>
 </body>
 </html>
