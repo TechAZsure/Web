@@ -192,6 +192,9 @@ body {
   font-size: 1.1rem;
   margin-bottom: 20px;
 }
+.carousel-container{
+  width: 100%;
+}
 
 /* Animation styles */
 .animate-text {
