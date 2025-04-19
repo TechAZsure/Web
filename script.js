@@ -1,10 +1,16 @@
-// Smooth scroll on hover for specific links
-document.querySelectorAll('.hover-scroll').forEach(link => {
-  link.addEventListener('mouseenter', function(e) {
-    const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+const closeBtn = document.getElementById('close-btn');
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+
+closeBtn.addEventListener('click', () => {
+  navLinks.classList.remove('show');
+});
+
+darkModeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
 });
