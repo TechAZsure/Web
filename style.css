@@ -172,6 +172,10 @@ body {
     display: flex;
   }
 
+  .what-we-do-section {
+  width: 100;
+}
+
   .nav-links li {
     text-align: center;
     margin: 10px 0;
@@ -237,7 +241,6 @@ body {
 
 .what-we-do-section {
   background: #f4faff;
-  width: 100%;
 }
 
 .section-title {
