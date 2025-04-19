@@ -1,4 +1,4 @@
-* {
+i* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -233,4 +233,35 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.what-we-do-section {
+  background: #f4faff;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.service-box {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 240, 255, 0.15);
+  transition: all 0.3s ease;
+  height: 100%;
+  text-align: center;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 240, 255, 0.3);
+}
+
+.service-box .icon {
+  font-size: 2.5rem;
+  color: #00f0ff;
+  margin-bottom: 15px;
 }
