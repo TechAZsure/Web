@@ -1,0 +1,86 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  padding: 20px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #222;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #111;
+}
+.navbar ul li {
+  position: relative;
+}
+.navbar ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+.navbar ul li:hover {
+  background-color: #333;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #444;
+  min-width: 200px;
+  z-index: 999;
+}
+.dropdown-content li a {
+  padding: 10px 15px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Neon Glow Line */
+.neon-glow {
+  height: 4px;
+  background: linear-gradient(90deg, #0ff, #0f0, #f0f, #0ff);
+  animation: glow 4s linear infinite;
+}
+@keyframes glow {
+  0% { background-position: 0% }
+  100% { background-position: 100% }
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  border-bottom: 1px solid #ccc;
+  background: #f7f7f7;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #111;
+  color: white;
+}
