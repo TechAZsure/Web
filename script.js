@@ -37,3 +37,13 @@ const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
+// Currently not used, but ready for dynamic interactivity
+// Future feature: Add to cart logic, dynamic search, etc.
+// Placeholder console log for button clicks
+document.querySelectorAll('.btn-primary').forEach(btn => {
+  btn.addEventListener('click', () => {
+    alert('Item added to cart!');
+  });
+});
+
+
